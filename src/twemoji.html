@@ -1,38 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
     <meta charset="UTF-8" />
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    />
-    <head>
-        <script
-            src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
-            crossorigin="anonymous"
-        ></script>
-        <link
-            rel="stylesheet"
-            href="../dist/output.css"
-        />
-        <!-- <link rel="stylesheet" href="styles.css" /> -->
-    </head>
-    <body
-        style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        "
-    >
-        <div>
-            <h1>😀</h1>
-            <h1>😂</h1>
-            <h1>🥺</h1>
-            <h1>😎</h1>
-            <h1>😍</h1>
-            <h1>😠</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <!-- TODO: let people be able to download/upload their answers -->
+    <main class="p-4">
+      <div
+        class="flex justify-between border-8 border-solid border-green-400 p-4"
+      >
+        <div class="skill flex items-center">
+          <!-- TODO: make input display limit of 40 chars -->
+          <input
+            placeholder="Insert Skill"
+            maxlength="40"
+            type="text"
+            class="border-4 border-solid border-green-400 p-2 text-lg required:border-red-400"
+          />
         </div>
-    </body>
-    <script>
-        twemoji.parse(document.body)
-    </script>
+        <select class="skilllist border-4">
+          <option value="confident">confident in</option>
+          <option value="love">love</option>
+          <option value="adore">adore</option>
+          <option value="dislike">dislike</option>
+        </select>
+        <input
+          type="submit"
+          class="border-4 border-red-600 p-2 hover:cursor-pointer"
+        />
+      </div>
+      <div
+        class="flex justify-between border-8 border-solid border-green-400 p-4"
+      >
+        <div class="skill flex items-center">
+          <!-- TODO: make input limit of 40 chars -->
+          <p class="text-3xl">This is 40 chars input for demo purposes</p>
+        </div>
+        <button class="bnt">😀</button>
+      </div>
+    </main>
+  </body>
+  <script>
+    twemoji.parse(document.body);
+  </script>
 </html>
