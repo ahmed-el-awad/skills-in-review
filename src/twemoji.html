@@ -8,6 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../dist/output.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- TODO: let people be able to download/upload their answers -->
@@ -15,28 +16,30 @@
       <div
         class="flex justify-between border-8 border-solid border-green-400 p-4"
       >
-        <div class="skill flex items-center">
+        <div class="flex items-center">
           <!-- TODO: make input display limit of 40 chars -->
           <input
             placeholder="Insert Skill"
             maxlength="40"
             type="text"
-            class="border-4 border-solid border-green-400 p-2 text-lg"
+            class="skill border-4 border-solid border-green-400 p-2 text-lg"
           />
         </div>
-        <select class="skilllist border-4">
+        <select class="opinion border-4 focus:border-red-500">
           <option value="confident">confident in</option>
           <option value="love">love</option>
           <option value="adore">adore</option>
           <option value="dislike">dislike</option>
         </select>
-        <input
-          type="submit"
+        <button
           class="border-4 border-red-600 p-2 hover:cursor-pointer"
-        />
+          onclick="addSkill()"
+        >
+          Add
+        </button>
       </div>
       <div
-        class="flex justify-between border-8 border-solid border-green-400 p-4"
+        class="flex justify-between border-8 border-t-0 border-solid border-green-400 p-4"
       >
         <div>
           <p class="text-3xl">This is 40 chars input for demo purposes</p>

@@ -580,6 +580,14 @@ video {
   border-width: 8px;
 }
 
+.border-b-0 {
+  border-bottom-width: 0px;
+}
+
+.border-t-0 {
+  border-top-width: 0px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -667,4 +675,13 @@ video {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
+}
+
+.hover\:border-dashed:hover {
+  border-style: dashed;
+}
+
+.focus\:border-red-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
