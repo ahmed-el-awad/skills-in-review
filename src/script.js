@@ -21,6 +21,7 @@ function addSkill() {
 
     const pSkill = document.createElement("p");
     pSkill.innerHTML = skill;
+    pSkill.classList.add("text-3xl");
 
     // TODO: make a function to return the correct emoji based on opinion
     const pOpinion = document.createElement("p");
@@ -29,6 +30,16 @@ function addSkill() {
     innerDiv.appendChild(pSkill);
     parentDiv.appendChild(innerDiv);
     parentDiv.appendChild(pOpinion);
+
+    parentDiv.classList.add(
+      "flex",
+      "justify-between",
+      "border-8",
+      "border-t-0",
+      "border-solid",
+      "border-green-400",
+      "p-4",
+    );
 
     const main = document.querySelector("main");
     main.appendChild(parentDiv);

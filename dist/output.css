@@ -548,28 +548,12 @@ video {
   display: flex;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .items-center {
   align-items: center;
 }
 
 .justify-between {
   justify-content: space-between;
-}
-
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.rounded-sm {
-  border-radius: 0.125rem;
 }
 
 .border-4 {
@@ -580,10 +564,6 @@ video {
   border-width: 8px;
 }
 
-.border-b-0 {
-  border-bottom-width: 0px;
-}
-
 .border-t-0 {
   border-top-width: 0px;
 }
@@ -592,33 +572,9 @@ video {
   border-style: solid;
 }
 
-.border-dashed {
-  border-style: dashed;
-}
-
 .border-green-400 {
   --tw-border-opacity: 1;
   border-color: rgb(74 222 128 / var(--tw-border-opacity));
-}
-
-.border-red-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(248 113 113 / var(--tw-border-opacity));
-}
-
-.border-yellow-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(250 204 21 / var(--tw-border-opacity));
-}
-
-.border-lime-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(163 230 53 / var(--tw-border-opacity));
-}
-
-.border-green-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(134 239 172 / var(--tw-border-opacity));
 }
 
 .border-red-600 {
@@ -626,12 +582,12 @@ video {
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .text-3xl {
@@ -644,41 +600,8 @@ video {
   line-height: 1.75rem;
 }
 
-.caret-green-400 {
-  caret-color: #4ade80;
-}
-
-.required\:border-red-400:required {
-  --tw-border-opacity: 1;
-  border-color: rgb(248 113 113 / var(--tw-border-opacity));
-}
-
-.required\:bg-red-400:required {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.valid\:border-zinc-400:valid {
-  --tw-border-opacity: 1;
-  border-color: rgb(161 161 170 / var(--tw-border-opacity));
-}
-
-.valid\:border-green-400:valid {
-  --tw-border-opacity: 1;
-  border-color: rgb(74 222 128 / var(--tw-border-opacity));
-}
-
-.invalid\:border-red-600:invalid {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
-}
-
 .hover\:cursor-pointer:hover {
   cursor: pointer;
-}
-
-.hover\:border-dashed:hover {
-  border-style: dashed;
 }
 
 .focus\:border-red-500:focus {
