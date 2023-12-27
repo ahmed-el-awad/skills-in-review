@@ -10,7 +10,7 @@ function addSkill() {
     <div
       class="flex justify-between border-8 border-t-0 border-solid border-green-400 p-4"
     >
-      <div>
+      <div class="flex items-center">
         <p class="text-3xl">This is 40 chars input for demo purposes</p>
       </div>
       <p class="">😀</p>
@@ -25,6 +25,8 @@ function addSkill() {
 
     const pOpinion = document.createElement("p");
     pOpinion.innerHTML = returnEmoji(opinion);
+
+    innerDiv.classList.add("flex", "items-center");
 
     innerDiv.appendChild(pSkill);
     parentDiv.appendChild(innerDiv);
