@@ -23,9 +23,8 @@ function addSkill() {
     pSkill.innerHTML = skill;
     pSkill.classList.add("text-3xl");
 
-    // TODO: make a function to return the correct emoji based on opinion
     const pOpinion = document.createElement("p");
-    pOpinion.innerHTML = opinion;
+    pOpinion.innerHTML = returnEmoji(opinion);
 
     innerDiv.appendChild(pSkill);
     parentDiv.appendChild(innerDiv);
@@ -45,8 +44,26 @@ function addSkill() {
     main.appendChild(parentDiv);
     console.log(main);
 
+    twemoji.parse(document.body);
+
     // reset values
     document.querySelector(".skill").value = "";
     document.querySelector(".opinion").value = "confident";
+  }
+}
+
+// TODO: revamp opinions and emojis
+function returnEmoji(opinion) {
+  switch (opinion) {
+    case "confident":
+      return "😎";
+    case "love":
+      return "😍";
+    case "adore":
+      return "🥺";
+    case "dislike":
+      return "👎";
+    default:
+      return "💀";
   }
 }
