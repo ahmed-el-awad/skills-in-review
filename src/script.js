@@ -11,7 +11,7 @@ function addSkill() {
       class="flex justify-between border-8 border-t-0 border-solid border-green-400 p-4"
     >
       <div class="flex items-center">
-        <p class="text-3xl">This is 40 chars input for demo purposes</p>
+        <p class="text-3xl">25 character for the demo</p>
       </div>
       <p class="">😀</p>
     </div>
