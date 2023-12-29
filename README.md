@@ -1,6 +1,6 @@
 # Skills In Review
 
-A website that allows you to add skills you have learnt this year, alongside your opinion on them. Each opinion is then represented by an emoji.
+A [website](https://ahmedmudkip.github.io/skills-in-review/) that allows you to add skills you have learnt this year, alongside your opinion on them. Each opinion is then represented by an emoji.
 
 ## Tech Stack
 
