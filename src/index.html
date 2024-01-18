@@ -14,21 +14,22 @@
     <!-- TODO: let people be able to download/upload their answers -->
     <main class="p-4">
       <div
-        class="flex sm:flex-row flex-col sm:gap-0 gap-3 justify-between border-8 border-solid border-green-400 p-4"
+        class="flex flex-col justify-between gap-3 border-8 border-solid border-green-400 p-4 sm:flex-row sm:gap-0"
       >
-
         <!-- Input field -->
         <div class="flex items-center">
           <input
             placeholder="Insert Skill"
             maxlength="25"
             type="text"
-            class="skill w-full border-4 border-solid border-green-400 p-2 text-lg"
+            class="skill w-full border-8 border-solid border-green-400 p-2 text-lg focus:border-blue-500"
           />
         </div>
 
         <!-- Emoji type selector -->
-        <select class="opinion border-4 focus:border-red-500">
+        <select
+          class="opinion border-8 border-green-400 p-2 focus:border-blue-500"
+        >
           <option value="confident">confident in</option>
           <option value="love">love</option>
           <option value="adore">adore</option>
@@ -37,7 +38,7 @@
 
         <!-- Add button -->
         <button
-          class="border-4 border-red-600 p-2 hover:cursor-pointer"
+          class="border-8 border-red-600 p-2 hover:cursor-pointer focus:border-blue-500"
           onclick="addSkill()"
         >
           Add
