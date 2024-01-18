@@ -44,6 +44,7 @@ function addSkill() {
 
     const main = document.querySelector("main");
     main.appendChild(parentDiv);
+    // TODO: check out how to output this for better debugging
     console.log(main);
 
     twemoji.parse(document.body);
